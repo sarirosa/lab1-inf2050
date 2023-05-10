@@ -4,6 +4,8 @@
  */
 package bonjournom;
 
+import aleatoire.Person;
+
 /**
  *
  * @author sarirosa
@@ -14,7 +16,8 @@ public class BonjourNom {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.printf("Bonjour %s %s \n", args[0], args[1]);
+        Person p = new Person("Sara", "Boum", 33);
+        System.out.printf("Bonjour %s %s %d\n", args[0], args[1], p.getAge());
     }
     
 }
